@@ -1,0 +1,15 @@
+import time
+
+def set_break_alarm():
+    work_interval = 2 * 60 * 60  # Two hours in seconds
+    break_duration = 30 * 60  # 30 minutes in seconds
+    
+    while True:
+        print("Time to work!")
+        time.sleep(work_interval)
+        
+        print("Time for a 30-minute break!")
+        time.sleep(break_duration)
+        
+if __name__ == "__main__":
+    set_break_alarm()
